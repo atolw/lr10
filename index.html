@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Гра «Однорукий бандит» — Casino Slot</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Playfair+Display:wght@800;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="machine-stage">
+        
+        <div class="slot-cabinet">
+            
+            <div class="beacon-assembly">
+                <div id="beaconDome" class="beacon-dome"></div>
+                <div class="beacon-collar"></div>
+            </div>
+
+            
+            <div class="cabinet-arch">
+                <div class="arch-filigree"></div>
+                <div class="arch-subtitle">CASINO</div>
+                <div class="arch-title">SLOT</div>
+            </div>
+
+            
+            <div class="cabinet-chassis">
+                <div class="nameplate-strip">CASINO SLOT</div>
+
+                
+                <div class="player-hud">
+                    <div class="player-info" title="Ім'я гравця">
+                        <span>👤</span>
+                        <span id="playerNameDisplay" class="player-name-text">User</span>
+                        <button type="button" id="editNameBtn" class="edit-name-btn" title="Змінити ім'я">✎</button>
+                    </div>
+                    <div id="attemptDisplay" class="attempt-badge">Спроба 0 з 3</div>
+                </div>
+
+                
+                <div class="reels-housing">
+                    <div class="reels-grid">
+                        <div class="reel-window" id="reel-0"></div>
+                        <div class="reel-window" id="reel-1"></div>
+                        <div class="reel-window" id="reel-2"></div>
+                    </div>
+                </div>
+
+                
+                <div class="center-trim">3 однакові по горизонталі — перемога</div>
+
+                
+                <div class="lower-plaque">
+                    <div class="plaque-title">BARS &amp; 7s WINS!</div>
+                    <div class="plaque-graphics">
+                        <div class="mini-bars">BAR<br>BAR<br>BAR</div>
+                        <span class="mini-seven">7</span>
+                        <div class="mini-bars">BAR<br>BAR<br>BAR</div>
+                        <span class="mini-seven">7</span>
+                        <div class="mini-bars tilt-right">BAR<br>BAR<br>BAR</div>
+                    </div>
+                </div>
+
+                
+                <div class="coin-chute"></div>
+            </div>
+        </div>
+
+        
+        <div id="leverAssembly" class="lever-assembly" role="button" tabindex="0" aria-label="Потягнути важіль">
+            <div id="leverTooltip" class="lever-tooltip">ТЯГНИ!</div>
+            <div class="lever-mount"></div>
+            <div class="lever-pivot">
+                <div class="lever-shaft"></div>
+                <div class="lever-knob"></div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="controls-panel">
+        <div id="statusBanner" class="status-banner">
+            Потягніть важіль праворуч або натисніть «Generate», щоб почати! (п.с спробуйте написати F2-potuzhno)
+        </div>
+        <div class="buttons-row">
+            <button type="button" id="generateBtn" class="btn btn-generate">Generate</button>
+            <button type="button" id="resetBtn" class="btn btn-reset">Грати знову</button>
+        </div>
+    </div>
+
+        <script src="script.js"></script>
+</body>
+</html>
